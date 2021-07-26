@@ -1,3 +1,3 @@
-for i in 1.. do
-    puts i
-end
+puts"キーボードから入力してみよう"
+input_key = gets
+puts "入力された内容は#{input_key}です。"
