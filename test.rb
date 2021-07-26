@@ -1,4 +1,9 @@
-amounts = {"apple"=>2,"strowvery"=>5,"orange"=>7}
-amounts.each do |fruit, amount|
- puts "#{fruit}は#{amount}個です"
+i = 1
+while i <= 10 do
+  if i == 5
+    puts"the END"
+    break
+  end
+  puts i
+  i += 1
 end
