@@ -1,9 +1,6 @@
-i = 1
-while i <= 10 do
-  if i == 5
-    puts"the END"
-    break
-  end
-  puts i
-  i += 1
-end
+puts "２つの整数を入力してください。"
+
+input01 = gets.to_i
+input02 = gets.to_i
+
+puts input01*input02
