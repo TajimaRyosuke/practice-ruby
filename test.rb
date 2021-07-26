@@ -1,5 +1,3 @@
-dice = 0
-while dice != 6 do
-  dice =rand(1..6)
-  puts dice
+for i in 1..6 do
+  puts i
 end
