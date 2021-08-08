@@ -5,3 +5,7 @@ puts 4/4
 def test 
   puts 'こんにちは、Rubyを勉強してます！'
 end
+
+def summer 
+  puts '夏ですね'
+end
