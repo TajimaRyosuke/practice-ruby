@@ -7,5 +7,5 @@ def test
 end
 
 def summer 
-  puts '夏ですね'
+  puts '現在Javaの勉強中'
 end
