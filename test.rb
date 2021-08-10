@@ -8,4 +8,5 @@ end
 
 def summer 
   puts '現在Javaの勉強中'
+  puts 'なかなか理解が難しい'
 end
