@@ -1,56 +1,24 @@
+import java.util.Scanner;
+
 class Main{
-  public static void main(String [] args){
-    System.out.println("Hello");
+  public static void main(String[] args){
+    Person.hello("Bob", 29);
+    Person.hello("Tom", 39);
 
-    System.out.println(3 % 5);
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("あなたの名前を教えてください");
+    String yourName = scanner.next();
+    System.out.println("あなたの名前は" + yourName + "さんですね");
 
-    String greeting = "Hello !!";
 
-    String name = "Miyamoto";
-    name = "Sasaki";
-    System.out.println(greeting + " "  + name + " " + "Kojiro");
+    String name = Person.fullName("Kate", "Jones");
+    System.out.println(name);
 
-    int number;
-    number = 3;
-    System.out.println(number = number + 1);
+    int total = add(10, 45);
+    System.out.println(total);
+  }
 
-    System.out.println(name == "Sasaki");
-
-    if(name == "Sasaki"){
-      System.out.println("あなたの名前は" + name + "です" );
-    } else {
-      System.out.println("あなたは誰ですか？");
-    }
-
-    String bigName = "Snake";
-    // bigName = "camel";
-    switch(bigName){
-      case "Snake":
-        System.out.println("あなたの名前は" + bigName + "です");
-        break;
-      default:
-        System.out.println("あなたに名前はありません");
-        break;
-    }
-
-    // int i = 10;
-    // while(i > 0){
-    //   System.out.println(i);
-    //   i-= 1;
-    // }
-
-    for(int i = 1; i <= 10; i+= 1){
-      if(i % 3 == 0){
-        continue;
-      }
-      System.out.println(i + "回ジャンプしました");
-    }
-
-    String[] yourNames = {"yusuke", "junya", "emit"};
-    yourNames[0] = "seiya";
-
-    for(int i = 0; i < yourNames.length; i++){
-      System.out.println("あなたの名前は" + yourNames[i] + "ですよ");
-    }
+  public static int add(int a, int b){
+    return a + b;
   }
 }
