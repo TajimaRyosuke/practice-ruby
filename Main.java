@@ -22,18 +22,31 @@ class Main{
       System.out.println("あなたは誰ですか？");
     }
     
-    // public void person(){
-    //   int age = 30;
+    String bigName = "Snake";
+    // bigName = "camel";
+    switch(bigName){
+      case "Snake":
+        System.out.println("あなたの名前は" + bigName + "です");
+        break;
+      default:
+        System.out.println("あなたに名前はありません");
+        break;
+    }
     
-    //   double height = 189.2;
-    
-    //   double weight = 72.6;
-    
-    //   double bmi = weight / height / height;
-      
-    //   System.out.println(bmi);
+    // int i = 10;
+    // while(i > 0){
+    //   System.out.println(i);
+    //   i-= 1;
     // }
     
+    for(int i = 1; i <= 10; i+= 1){
+      if(i % 3 == 0){
+        continue;
+      }
+      System.out.println(i + "回ジャンプしました");
+    }
     
+    String[] yourNames = {"yusuke", "junya", "emit"};
+    System.out.println("あなたの名前は" + yourNames[0] + "ですよ");
   }
 }
