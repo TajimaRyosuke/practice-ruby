@@ -7,4 +7,8 @@ class Person{
   public static String fullName(String firstName, String lastName){
     return firstName + " " + lastName;
   }
+  
+  public static void bodyData(String weight, String height){
+    System.out.println("体重は" + weight + "です。身長は" + height + "です。");
+  }
 }
