@@ -10,5 +10,6 @@ class Person{
   
   public static void bodyData(String weight, String height){
     System.out.println("体重は" + weight + "です。身長は" + height + "です。");
+    System.out.println('就活は大変です。')
   }
 }
