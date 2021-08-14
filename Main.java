@@ -1,24 +1,22 @@
-import java.util.Scanner;
-
 class Main{
-  public static void main(String[] args){
-    Person.hello("Bob", 29);
-    Person.hello("Tom", 39);
+  public static void main(String [] args){
+    int i = 0 ;
+    int loopCount = 100;
+    int numFizz = 3;
+    int numBuzz = 5;
+    String strFizz = "Fizz";
+    String strBuzz = "Buzz";
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("あなたの名前を教えてください");
-    String yourName = scanner.next();
-    System.out.println("あなたの名前は" + yourName + "さんですね");
-
-
-    String name = Person.fullName("Kate", "Jones");
-    System.out.println(name);
-
-    int total = add(10, 45);
-    System.out.println(total);
-  }
-
-  public static int add(int a, int b){
-    return a + b;
+    for(i = 1; i <= loopCount; i++){
+      if(i % (numFizz * numBuzz) == 0){
+        System.out.println(strFizz + strBuzz);
+      } else if (i % numFizz == 0){
+        System.out.println(strFizz);
+      } else if (i % numBuzz == 0){
+        System.out.println(strBuzz);
+      } else {
+        System.out.println(i);
+      }
+    }
   }
 }
