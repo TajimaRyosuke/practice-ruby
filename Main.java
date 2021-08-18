@@ -1,10 +1,13 @@
 class Main{
     public static void main(String[] args){
-        int num1 = 100 ;
-        int num2 = 2 ;
-        int num3 = num1 / num2 ;
-        System.out.println(num3) ;
-        System.out.println("ここ数日うまくいってないけど");
-        System.out.println("俺なら乗り越えられる");
+      for(int i=0; i<5; i++){
+      for(int j=0; j<i; j++){
+        System.out.print(" ");
+      }
+      for(int k=0; k<(5-i)*2-1; k++){
+        System.out.print("*");
+      }
+      System.out.print("\n");
+    }
     }
 }
